@@ -16,7 +16,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("RVV1a.png");
+  background-image: url("RVV1z.png");
 
   /* Full height */
   height: 100%;
@@ -97,9 +97,9 @@ p {
 }
 
 .button1 {
-  background-color: #f68840;
-  color: #254141;
-  border: 2px solid #f68840;
+  background-color: #254141;
+  color: white;
+  border: 2px solid #254141;
   border-radius: 5px;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -110,6 +110,14 @@ p {
   border: 2px solid white;
   color: #254141;
 }
+    .button1-web {
+        background: #f68840;
+        border: 2px solid #f68840;
+        color: #254141;
+    }
+    .button1-position {
+        margin-left: 20%; 
+    }
 
     .column p {
         color: #254141;
@@ -136,6 +144,9 @@ img {
   background-color: white;
 }
 
+    .contact-form {
+        margin:0 20%;
+    }
 footer {
   text-align: center;
   padding: 3px;
@@ -144,7 +155,8 @@ footer {
 }
 .parallax {
   /* The image used */
-  background-image: url("mnogoboj2018-27o2.jpg");
+  background-image: url("PPo2.jpg");
+
 
   /* Set a specific height */
   min-height: 700px; 
@@ -171,7 +183,7 @@ footer {
 
 .parallax3 {
   /* The image used */
-  background-image: url("PPz2.jpg");
+  background-image: url("mnogoboj2018-27m.png");
 
   /* Set a specific height */
   min-height: 700px; 
@@ -187,7 +199,48 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-    
+
+    .scrolling {
+        height:auto;
+        background-color:#254141;
+        font-size:24px;
+        display: inline-block;"
+    }
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 9vh;
+    }
+    h2 {
+        width: 75%;
+    }
+  br.mobile {
+    display: none;
+  }
+  .firstpage {
+        top: 20%;
+    }
+    .scrolling {
+        font-size: 20px;
+    }
+    p {
+        width: 75%;
+    }
+    .button1 {
+          background-color: white;
+          color: #254141;
+          border: 2px solid white;
+          border-radius: 5px;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 700;
+
+    }
+    .button1-position {
+        margin-left: 12.5%; 
+    }
+    .contact-form {
+        margin:0 12.5%;
+    }
+}
 </style>
 </head>
 <body>
@@ -197,18 +250,20 @@ footer {
     <h4>"Taborniki smo za vse, vendar niso vsi za tabornike."</h4>
     <h6>Lord Baden - Powell (ustavnovitelj gibanja)</h6>
     <br>
+    <br>
     <h1>SOBOŠKI<br>TABORNIKI</h1>
+    <br class="mobile">
     <br>
     <h4>Si se pripravljen preizkusiti, če si za tabornike?</h4>
     <br>
-    <br>
+    <br class="mobile">
     <button class="button button1" onclick="window.location.href='#contact';" >Pridruži se</button>
 </div>
 </div>
 
 <div class="parallax"></div>
 
-<div style="height:auto;background-color:#254141;font-size:24px;display: inline-block;">
+<div class="scrolling">
     <br>
     <h2>Kaj taborniki smo?</h2>
     <br>
@@ -216,14 +271,14 @@ footer {
     <br>
     <p>Več o taborniškem programu, načinu dela, starostinh skupinah, vrednotah in poslanstvu lahko preberete s klikom na spodnji link na spletni strani tabornikov.</p>
     <br>
-        <button class="button button1" style="margin-left: 20%;" onclick="window.location.href='https://www.taborniki.si/tabornistvo/'">Več o taborništvu</button>
+        <button class="button button1 button1-position button1-web" onclick="window.location.href='https://www.taborniki.si/tabornistvo/'">Več o taborništvu</button>
     <br>
     <br>
 </div>
 
 <div class="parallax2"></div>
 
-<div style="height:auto;background-color:#254141;font-size:24px;display: inline-block;">
+<div class="scrolling">
     <br>
     <h2>O rodu Veseli veter</h2>
     <br>
@@ -239,7 +294,7 @@ footer {
 
 <div class="parallax3"></div>
 
-<div style="height:auto;background-color:#254141;font-size:24px;display: inline-block; width: 100%;">
+<div class="scrolling" style="width: 100%;">
     <br>
     <h2>Pridruži se</h2>
     <br>
@@ -250,7 +305,7 @@ footer {
     <br>
     <br>
 <div id="contact" name="contact">
-<div style="margin:0 20%;">
+<div class="contact-form">
   <!-- CHANGE THE URL HERE -->
   <form action="https://app.99inbound.com/e/123" method="POST" target="_blank">
     <h2 style="text-align: center;">Kontaktni obrazec</h2>
@@ -268,7 +323,7 @@ footer {
     <textarea name="message" class="form-control" id="message" rows="5" placeholder="Sporočilo" required></textarea>
   </div>
 
-  <button type="submit" class="button button1">Pošlji</button>
+  <button type="submit" class="button button1 button1-web">Pošlji</button>
   </form>
 </div>
   </div>
